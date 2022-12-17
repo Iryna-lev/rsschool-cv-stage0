@@ -1,39 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>CV</title>
-    </head>
-    <body>
-        <h1>Iryna Levko</h1>
-        <h2>Contact details</h2>
-        <p>
-            <ul>
-                <li>E-mail address : iryna.b.levko@gmail.com</li>
-                <li>LinkedIn:linkedin.com/in/iryna-levko-694859186</li>
-            </ul>
-        </p>
-        <h2>About me</h2>
-        <p>
-            Actively searching for the chance to apply my skills, experience and knowledge to a new career. Highly
-motivated. Quick learner.
-        </p>
-        <h2>HTML code example</h2>
-        <pre>
-            <code>
-                <fieldset>Your sex? <label for="sex"> <input id="female" type="radio" name="sex" value="female"/>Female </label> <label for="male"> <input id="male" type="radio" name="sex"value="male"/> Male</label> </fieldset>
-            </code>
-        </pre>
-        <h2>Education and training</h2>
-        <p>
-            <ul>
-                <li>Master’s degree, Applied Linguistics
-                </li>
-                <li>The Fundamentals of Digital Marketing. Google.
-                </li>
-                <li>Responsive Web Design. FreeCodeCamp.(in progress)</li>
-                <li>«JavaScript/Front-end. Stage 0». RS Schools Course</li>
-            </ul>
-        </p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="CV">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="js/scripts.js"></script>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#contacts" class="nav-link">CONTACTS</a></li>
+        <li class="nav-item"><a href="#about-me" class="nav-link">ABOUT ME</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">EDUCATION AND TRAININGS</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">HTML CODE EXAMPLE</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">LANGUAGE SKILLS</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+   <main>
+    <div class="cv-title">
+      <div id="1">
+        <img src="my-photo.jpg" alt="my_photo" class="photo"/>
+      </div>
+      <div id="2" class="title-text">
+      <div><h1>Iryna Levko</h1></div>
+      <div><h2> # student # </h2></div>
+    </div>
+    </div>
+    <div class="container">
+      <section class="section" id="contacts">
+        <h2 class="chapter">CONTACTS</h2>
+      <p>iryna.b.levko@gmail.com</p>
+      <a href="https://www.linkedin.com/in/iryna-levko-694859186/">linkedin</a>
+    </section>
+    <section class="section" id="about-me">
+      <h2 class="chapter">ABOUT ME</h2>
+      <p>Actively searching for the chance to apply my skills, experience and knowledge to a
+      new career. Highly motivated. Quick learner.  Work permit.</p>
+    </section>
+    <section class="section" id="education">
+      <h2 class="chapter">EDUCATION AND TRAININGS</h2>
+      <p>MASTER'S DEGREE, APPLIED LINGUISTICS. – State University “Lviv Polytechnics”</p>
+      <p>THE FUNDAMENTALS OF DIGITAL MARKETING – GOOGLE Digital Workshop</p>
+      <p>RESPONSIVE WEB DESIGN - FreeCodeCamp. (in progress)</p>
+      <p>JAVASCRIPT/FRONT-END. STAGE 0 - RS Schools Course. (in progress)</p>
+    </section>
+    <section class="section" id="code">
+      <h2 class="chapter">HTML CODE EXAMPLE</h2>
+      <pre>
+        <code>
+          let age = prompt('Enter your age?', 100);
+          alert(`You are ${age} !`); 
+      </code>
+      </pre>
+    </section>
+    <section class="section" id="languages">
+      <h2 class="chapter">LANGUAGE SKILLS</h2>
+      <p>ENGLISH - C1</p>
+      <p>POLISH - C1</p>
+      <p>GERMAN - A1</p>
+    </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <a href="https://rs.school/js/"><img src="rs-logo.jpg" alt="rs-school-log" class="logo"></a>
+        </div>
+        <div><p class="footer-year"> # 2022 # <p></div>
+        <div >
+        <a href="https://github.com/Iryna-lev"><img src="Github.jpg" alt="git-hub-user-profile" class="logo"></a>
+        </div>
+       </div>
+      </div>
+  </footer>
+</body>
 </html>
